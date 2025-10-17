@@ -10,7 +10,7 @@ public class Main {
         Student bob = new Student("Bob");
         Student Temirgaly = new Student("Temirgaly");
 
-// Build course: MathCourse + Mentor + Certificate
+// Build course
         Course math = new MathCourse();
         math = new MentorSupportDecorator(math, "Dr. Ivanov");
         math = new CertificateDecorator(math);
@@ -21,42 +21,40 @@ public class Main {
         );
 
 
-// Build course: ProgrammingCourse + Gamification
+// Build course
         Course prog = new ProgrammingCourse();
         prog = new GamificationDecorator(prog, 200);
 
 
-// Enroll students
+
         facade.enrollInCourse(alice, math);
         facade.enrollInCourse(bob, prog);
-        facade.enrollInCourse(Temirgaly, math);
-        facade.enrollInCourse(Temirgaly, prog);
+        facade.enrollInCourse(Temirgaly,  TemirgalyMath);
+        facade.enrollInCourse(Temirgaly, TemirgalyProg);
 
 
-// Simulate learning journey for Alice
+// Simulate learning
         facade.startLearning(alice, math);
         facade.deliverLesson(alice, math);
         facade.deliverLesson(alice, math);
         facade.completeCourse(alice, math);
 
 
-        // Simulate learning journey for Temirgaly
-        facade.startLearning(Temirgaly, math);
-        facade.deliverLesson(Temirgaly, math);
-        facade.completeCourse(Temirgaly, math);
+        facade.startLearning(Temirgaly, TemirgalyMath);
+        facade.deliverLesson(Temirgaly, TemirgalyMath);
+        facade.completeCourse(Temirgaly, TemirgalyMath);
 
-        facade.startLearning(Temirgaly, prog);
-        facade.deliverLesson(Temirgaly, prog);
-        facade.completeCourse(Temirgaly, prog);
+        facade.startLearning(Temirgaly, TemirgalyProg);
+        facade.deliverLesson(Temirgaly, TemirgalyProg);
+        facade.completeCourse(Temirgaly, TemirgalyProg);
 
 
-// Simulate learning for Bob
         facade.startLearning(bob, prog);
         facade.deliverLesson(bob, prog);
 
 
 
-// Show status and leaderboard
+//status and leaderboard
         facade.showStudentStatus(alice);
         facade.showStudentStatus(bob);
         facade.showStudentStatus(Temirgaly);
