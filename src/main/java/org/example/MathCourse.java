@@ -22,4 +22,6 @@ public class MathCourse implements Course {
     public void completeCourse(Student student) {
         System.out.println("[" + name + "] " + student.getName() + " completed the course.");
     }
+
+
 }
