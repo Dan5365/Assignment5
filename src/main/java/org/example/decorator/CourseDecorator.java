@@ -1,4 +1,7 @@
-package org.example;
+package org.example.decorator;
+
+import org.example.model.Course;
+import org.example.model.Student;
 
 public abstract class CourseDecorator implements Course {
     protected final Course wrapped;

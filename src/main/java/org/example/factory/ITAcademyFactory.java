@@ -1,4 +1,10 @@
-package org.example;
+package org.example.factory;
+
+import org.example.decorator.GamificationDecorator;
+import org.example.MathCourse;
+import org.example.decorator.MentorSupportDecorator;
+import org.example.ProgrammingCourse;
+import org.example.model.Course;
 
 public class ITAcademyFactory implements CourseFactoryAbstract {
     @Override

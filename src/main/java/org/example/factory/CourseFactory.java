@@ -1,4 +1,9 @@
-package org.example;
+package org.example.factory;
+
+import org.example.MathCourse;
+import org.example.ProgrammingCourse;
+import org.example.builder.CourseBuilder;
+import org.example.model.Course;
 
 public class CourseFactory {
 

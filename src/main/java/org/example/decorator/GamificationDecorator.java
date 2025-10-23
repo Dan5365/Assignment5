@@ -1,4 +1,9 @@
-package org.example;
+package org.example.decorator;
+
+import org.example.NotificationService;
+import org.example.model.Course;
+import org.example.model.Leaderboard;
+import org.example.model.Student;
 
 public class GamificationDecorator extends CourseDecorator {
     private final int pointsOnComplete;

@@ -1,5 +1,8 @@
 package org.example;
 
+import org.example.model.Course;
+import org.example.model.Student;
+
 public class ProgrammingCourse implements Course {
     private final String name = "Programming 101";
 

@@ -1,5 +1,7 @@
 package org.example;
 
+import org.example.model.Student;
+
 import java.util.*;
 public class ProgressTracker {
     // map: studentId -> (courseName -> progress)

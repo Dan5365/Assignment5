@@ -1,4 +1,6 @@
-package org.example;
+package org.example.delivery;
+
+import org.example.model.Student;
 
 public class TextDelivery implements DeliveryMethod {
     @Override

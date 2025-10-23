@@ -1,4 +1,10 @@
-package org.example;
+package org.example.facade;
+
+import org.example.NotificationService;
+import org.example.ProgressTracker;
+import org.example.model.Course;
+import org.example.model.Leaderboard;
+import org.example.model.Student;
 
 import java.util.*;
 public class StudentPortalFacade {

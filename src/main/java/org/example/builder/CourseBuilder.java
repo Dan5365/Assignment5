@@ -1,4 +1,9 @@
-package org.example;
+package org.example.builder;
+
+import org.example.decorator.CertificateDecorator;
+import org.example.decorator.GamificationDecorator;
+import org.example.decorator.MentorSupportDecorator;
+import org.example.model.Course;
 
 public class CourseBuilder {
     private Course course;

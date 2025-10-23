@@ -1,5 +1,11 @@
 package org.example;
 
+import org.example.facade.StudentPortalFacade;
+import org.example.factory.CourseFactory;
+import org.example.model.Course;
+import org.example.model.Leaderboard;
+import org.example.model.Student;
+
 public class Main {
     public static void main(String[] args) {
         StudentPortalFacade facade = new StudentPortalFacade();
